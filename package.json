@@ -1,0 +1,28 @@
+{
+  "name": "forensight",
+  "version": "1.0.0",
+  "description": "ForenSight - Digital Image & Video Forensics and Evidence Integrity System (CSDF mini project)",
+  "main": "server.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node database/init.js --run",
+    "check:tools": "node utils/checkTools.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "chart.js": "^4.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "lucide": "^0.468.0",
+    "multer": "^2.0.2",
+    "pdfkit": "^0.16.0",
+    "sharp": "^0.33.5"
+  }
+}
